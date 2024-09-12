@@ -1,0 +1,154 @@
+/* src/styles/sections/WheelProgram.css */
+
+.wheel-program-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px;
+  align-items: center;
+}
+
+.wheel-program-red-container {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-image: url('../../assets/mercedes-benz-red.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wheel-program-red-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.wheel-program-content {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  max-width: 400px;
+  text-align: left;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.wheel-program-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.wheel-program-description {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.wheel-program-second-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wheel-program-second-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.wheel-program-second-image {
+  width: 50%;
+  height: auto;
+  border-radius: 8px 0 0 8px;
+  object-fit: cover;
+}
+
+.wheel-program-second-content {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.wheel-program-second-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.wheel-program-second-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .wheel-program-red-container {
+    height: auto;
+    background-position: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wheel-program-content {
+    position: static;
+    max-width: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .wheel-program-title {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+
+  .wheel-program-description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 768px) {
+  .wheel-program-second-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .wheel-program-second-image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+  }
+
+  .wheel-program-second-content {
+    width: 100%;
+    padding: 15px 10px;
+  }
+
+  .wheel-program-second-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .wheel-program-second-description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}

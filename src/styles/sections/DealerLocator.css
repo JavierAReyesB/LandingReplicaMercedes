@@ -1,0 +1,87 @@
+/* src/styles/sections/DealerLocator.css */
+
+.dealer-locator-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+}
+
+.dealer-locator-text {
+  text-align: left;
+  margin-bottom: 30px;
+  max-width: 700px;
+  padding-left: 20px;
+}
+
+.dealer-locator-title {
+  font-size: 58px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.dealer-locator-subtitle {
+  text-align: left;
+  font-size: 25px;
+  max-width: 500px;
+  color: #555;
+}
+
+.dealer-locator-image {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url('../../assets/europa-night.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 40px;
+  margin-top: 20px;
+}
+
+.dealer-card {
+  background-color: rgba(255, 255, 255, 0.341);
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  max-width: 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.dealer-card h3 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.dealer-card p {
+  font-size: 16px;
+  color: #ddd;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+}
+
+.dealer-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dealer-card button:hover {
+  background-color: #e0e0e0;
+}

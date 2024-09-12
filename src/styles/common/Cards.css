@@ -1,0 +1,7 @@
+/* src/styles/common/Cards.css */
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+}

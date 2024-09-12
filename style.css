@@ -1,0 +1,31 @@
+/* Variables globales y estilos generales */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #333;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --header-height: 60px;
+  --padding: 20px;
+  --font-family: 'Arial', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

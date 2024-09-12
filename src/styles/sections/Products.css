@@ -1,0 +1,150 @@
+.products-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.product-card {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  height: auto;
+  min-height: 350px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-card .card-image {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  max-height: 200px;
+}
+
+.product-card .card-content {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: left;
+  color: #333;
+  background: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.product-card .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.product-card .card-description {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0 0 0;
+}
+
+.product-card .card-colors {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.product-card .color-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #ddd;
+}
+
+.product-action-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+.colors-container {
+  display: flex;
+  gap: 8px;
+}
+
+.button-container {
+  margin: 0;
+}
+
+.product-card .button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: auto;
+  max-width: 150px;
+}
+
+.product-card .button.primary {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ddd;
+}
+
+.product-card .button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .products-section {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    min-height: 300px;
+  }
+
+  .product-card .card-content {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 90%;
+  }
+
+  .product-card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .product-card .card-description {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0 0 0;
+  }
+}

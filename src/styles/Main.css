@@ -1,0 +1,28 @@
+/* // components/Main.js  */
+import { createHeader } from './Header.js';
+import { createFooter } from './Footer.js';
+
+
+export function renderApp() {
+    const app = document.getElementById('app'); 
+
+    // Montar los componentes
+    app.appendChild(createHeader());
+    app.appendChild(createMainContent());
+    app.appendChild(createFooter());
+}
+
+
+export function createMainContent() {
+    const main = document.createElement('main');
+    main.className = 'main-content';
+    main.innerHTML = `
+        <section id="products" class="products-section">
+            <h1>New Mercedes CLS</h1>
+            <div class="product-grid">
+                <!-- Inserta aquí la lógica para añadir productos -->
+            </div>
+        </section>
+    `;
+    return main ;
+}
